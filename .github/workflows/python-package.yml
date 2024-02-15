@@ -4,6 +4,8 @@
 
 name: Python package
 
+run-name: Build triggered via ${{ github.event_name }} by ${{ github.actor }}
+
 on:
   push:
     branches: [ "main" ]
