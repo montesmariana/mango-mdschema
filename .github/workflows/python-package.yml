@@ -48,7 +48,5 @@ jobs:
           pip install -r requirements.txt
       - name: Lint with pylint
         run: |
-          # fail if there are errors
-          pylint mango_mdschema tests --errors-only
-          # do not fail, just report
-          pylint mango_mdschema tests --exit-zero
+          # fail only if there are errors
+          pylint mango_mdschema tests --fail-under=6
